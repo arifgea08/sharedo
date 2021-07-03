@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 <!-- bagian title halaman -->
-@section('title', 'GeaShare-Welcome')
+@section('title', 'ShareDo-Login')
 
 <!-- bagian style-head halaman-->
 @section('style-head')
