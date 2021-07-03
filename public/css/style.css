@@ -1,0 +1,286 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.top{
+    background-image: url('../images/bg-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.top1{
+    background-image: url('../images/bg-2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.top1-custom{
+    background-image: url('../images/bg-2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+}
+
+.form-control{
+    width: auto;
+}
+
+
+/* untuk background */
+
+.bg-merah{
+    background-color: #EB3000;
+}
+
+.bg-orange{
+    background-color: #FCB40D;
+}
+
+.bg-biru{
+    background-color: #2564F8;
+}
+
+.bg-abuabu{
+    background-color: #CECDCD;
+}
+
+.bg-hujau{
+    background-color: #00EB2F;
+}
+
+.bg-kuning{
+    background-color: #f8fc0d;
+}
+
+.bg-donker{
+    background-color: #08193D;
+}
+
+.bg-ungutua{
+    background-color: #29007F;
+}
+
+.bg-ungu{
+    background-color: #B500D4;
+}
+
+.bg-ungumuda{
+    background-color: #D653EC;
+}
+
+
+/* .bg-grad1{
+    background: rgb(41,0,127);
+    background: linear-gradient(180deg, rgba(41,0,127,1) 0%, rgba(79,0,151,1) 27%, rgba(111,0,170,1) 58%, rgba(142,0,189,1) 88%, rgba(165,0,203,1) 96%, rgba(181,0,212,1) 100%); 
+} */
+
+
+/* button color */
+
+.btn-merah{
+    background-color: #EB3000;
+    border-color: #EB3000;
+}
+
+.btn-orange{
+    background-color: #FCB40D;
+    border-color: #FCB40D;
+}
+
+.btn-biru{
+    background-color: #2564F8;
+    border-color: #2564F8;
+}
+
+.btn-abuabu{
+    background-color: #CECDCD;
+    border-color: #CECDCD;
+}
+
+.btn-hijau{
+    background-color: #00EB2F;
+    border-color: #00EB2F;
+}
+
+.btn-kuning{
+    background-color: #f8fc0d;
+    border-color: #f8fc0d;
+}
+
+.btn-donker{
+    background-color: #08193D;
+    border-color: #08193D;
+}
+
+.btn-ungutua{
+    background-color: #29007F;
+    border-color: #29007F;
+}
+
+.btn-ungu{
+    background-color: #B500D4;
+    border-color: #B500D4;
+}
+
+.btn-ungumuda{
+    background-color: #D653EC;
+    border-color: #D653EC;
+}
+
+
+
+.bi{
+    font-size: 20px;
+}
+
+.bg-ungu1 .btn-outline-ungu1 .btn-ungu1{
+    background-color: #B500D4;
+}
+.btn-outline-ungu1 {
+    color: #B500D4;
+    border-color: #B500D4;
+    background-color: #B500D4;
+}
+.bg-putih{
+    background-color: #ffffff27;
+    border-radius: 20px;
+}
+.bg-putih1{
+    background-color: #ffffff27;
+}
+
+
+
+
+.font-putih{
+    color: white;
+}
+.font-hitam{
+    color: black;
+}
+.font-abu{
+    color: rgb(155, 152, 152);
+}
+.font-kuning{
+    color: #f8fc0d;
+}
+.font-orange{
+    color: #FCB40D;
+}
+
+
+
+.img-fluid{
+    background-size: cover;
+    height:auto;
+}
+
+
+
+.btn-ungu{
+    color: #fff;
+    background-color: #D653EC;
+    border-color: #D653EC;
+}
+.btn:hover{
+    background-color: #D653EC;
+}
+.navbar-brand{
+    font-size: 32px;
+}
+.br-sm{
+    border-radius: 0.5rem;
+}
+.br-md{
+    border-radius: 1rem;
+}
+.br-lg{
+    border-radius: 1.5rem;
+}
+.btn-ungu{
+    color: #fff;
+    background-color: #B500D4;
+    border-color: #B500D4;
+}
+
+.link-custom{
+    text-decoration: none;
+    color: #fff;
+}
+
+.link-b{
+    color: rgb(175, 243, 17);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-a {
+    display: block;
+    padding: .5rem 1rem;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+.nav-a:hover{
+    color: #fff;
+}
+.btn:hover{
+    background-color: #D653EC;
+}
+.navbar-brand{
+    font-size: 32px;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+a:hover{
+    color: #f8fc0d;
+}
+hr:not([size]) {
+    height: 2px;
+    margin: 0;
+    padding: 0;
+}
+
+.font-kecil {
+    font-size : 8px;
+}
+
+.badge-custom{
+    height:15px;
+    width:15px;
+    border-radius: 100%;
+}
+
+/* .anima1{
+    animation: none;
+    width:80%;
+    height:60%;
+} */
+
+/* .anima:hover{
+    animation: example;
+    animation-duration:4s;
+}
+@keyframes example {
+    from {height:20%}
+    to {height:100%}
+} */
+
+/* .anima1:hover{
+    animation: besar;
+    animation-duration:4s;
+}
+@keyframes besar {
+    from {height:60%; width :80%}
+    to {height:100%; width :100%}
+}
+.anima:after {
+    height:100%;
+    width: 100%;
+}
+ */
