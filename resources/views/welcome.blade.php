@@ -48,7 +48,7 @@
 @extends('layouts.app')
 
 <!-- bagian title halaman -->
-@section('title', 'GeaShare-Welcome')
+@section('title', 'ShareDo-Welcome')
 
 <!-- bagian style-head halaman-->
 @section('style-head')
@@ -104,7 +104,7 @@
                     Free yourself and establish relationships with others out there. It would be great to share with them.</h5>
     
                 <br>
-                <button type="button" class="btn btn-ungu br-md"><a class="nav-a p-0" href="/login">Get Started Now!</a></button>
+                <button type="button" class="btn btn-ungu br-md"><a class="nav-a p-0" href="{{route('login')}}">Get Started Now!</a></button>
     
             </div>
     
@@ -154,8 +154,8 @@
             <div class="row align-items-start">
                 <div class="col d-flex flex-column gap-2">
                     <h4>Menu</h4>
-                    <a href="/login">Login</a>
-                    <a href="/register">Register</a>
+                    <a href="{{route('login') }}">Login</a>
+                    <a href="{{route('register')}}">Register</a>
                 </div>
                 
                 <div class="col d-flex flex-column gap-2">
@@ -178,7 +178,7 @@
         </div>
         <hr class="bg-kuning">
         <div class="d-flex justify-content-center bg-putih1">
-            <h6 class="font-orange p-3">Copyright © {{config('app.name', 'GesaShare')}} 2021</h6>
+            <h6 class="font-orange p-3">Copyright © {{config('app.name', 'ShareDo')}} 2021</h6>
         </div>
     </div>
 </div>
