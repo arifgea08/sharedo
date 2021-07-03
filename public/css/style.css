@@ -225,6 +225,7 @@ body{
 }
 .nav-a:hover{
     color: #fff;
+    text-decoration: none;
 }
 .btn:hover{
     background-color: #D653EC;
