@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('first.masters')
 
 <!-- bagian title halaman -->
 @section('title', 'ShareDo-Login')
@@ -18,7 +18,7 @@
 
 
 <!-- bagian content/isi halaman -->
-@section('content')
+@section('first-content')
 
 <div class="top1">
 

@@ -41,146 +41,130 @@
 
 
 
+@extends('first.masters')
 
+@section('first-title', 'Welcome')
 
+@section('first-content')
 
-
-@extends('layouts.app')
-
-<!-- bagian title halaman -->
-@section('title', 'ShareDo-Welcome')
-
-<!-- bagian style-head halaman-->
-@section('style-head')
-    <style>
-        @import url('css/style.css');
-    </style>
-@endsection
-
-
-
-<!-- bagian content/isi halaman -->
-
-@section('content')
-<div class="mx-o">
-    <div class="top top-transition">
-        <nav class="navbar navbar-dark bg-transparent">
-            <div class="container d-flex justify-content-beetwen p-2 p-sm-3">
-              <div>
-                <a class="navbar-brand fw-bold" href="/">
-                    {{-- <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top"> --}}
-                    {{config('app.name', 'GeaShare')}}
-                  </a>
-              </div>
-              <div class="navbar-nav flex-row">
-
-                
-
-                {{-- <button type="button" class="btn btn-transparent position-relative">
-                    <i class="bi bi-bell"><span class="position-absolute top-10 start-50 bg-danger badge-custom border-light">
-                        <p class="font-kecil font-putih">9</p>
-                      </span></i> 
-                </button>
-
-                <button type="button" class="btn btn-primary position-relative">
-                    <i class="bi bi-bell"></i><span class="position-absolute top-0 start-100 translate-middle badge border border-light rounded-circle bg-danger p-2"><span class="visually-hidden">1</span></span>
-                </button> --}}
-
-                <button type="button" class="btn"><a class="nav-a p-0" href="/login">Login</a></button>
-                <button type="button" class="btn btn-ungu ms-3"><a class="nav-a p-0" href="/register">Register</a></button>
-              </div>
+    <div class="mx-o">
+        <div class="top top-transition">
+            <nav class="navbar navbar-dark bg-transparent">
+                <div class="container d-flex justify-content-beetwen p-2 p-sm-3">
+                  <div>
+                    <a class="navbar-brand fw-bold" href="/">
+                        {{-- <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top"> --}}
+                        {{config('app.name', 'GeaShare')}}
+                      </a>
+                  </div>
+                  <div class="navbar-nav flex-row">
+    
+                    
+    
+                    {{-- <button type="button" class="btn btn-transparent position-relative">
+                        <i class="bi bi-bell"><span class="position-absolute top-10 start-50 bg-danger badge-custom border-light">
+                            <p class="font-kecil font-putih">9</p>
+                          </span></i> 
+                    </button>
+    
+                    <button type="button" class="btn btn-primary position-relative">
+                        <i class="bi bi-bell"></i><span class="position-absolute top-0 start-100 translate-middle badge border border-light rounded-circle bg-danger p-2"><span class="visually-hidden">1</span></span>
+                    </button> --}}
+    
+                    <button type="button" class="btn"><a class="nav-a p-0" href="{{ route('login') }}">Login</a></button>
+                    <button type="button" class="btn btn-ungu ms-3"><a class="nav-a p-0" href="{{ route('register') }}">Register</a></button>
+                  </div>
+            
+            
+                </div>
+            </nav>
+        
+            <div class="container mt-5">
+                <div class="col-lg-4 col-md-12 bg-putih align-self-center p-3 shadow">
+                    <h1 class="font-putih text-capitalize fw-bold">Learn and make relations</h1>
+        
+                    <br>
+        
+                    <h5 class="font-putih lh-lg">Start sharing the best stories, experiences and impressions in your life. 
+                        Free yourself and establish relationships with others out there. It would be great to share with them.</h5>
+        
+                    <br>
+                    <button type="button" class="btn btn-ungu br-md"><a class="nav-a p-0" href="{{route('login')}}">Get Started Now!</a></button>
+        
+                </div>
+        
+                <div class="col-lg-8"></div>
+            </div>
+        </div>
         
         
-            </div>
-        </nav>
-    
-        <div class="container mt-5">
-            <div class="col-lg-4 col-md-12 bg-putih align-self-center p-3 shadow">
-                <h1 class="font-putih text-capitalize fw-bold">Learn and make relations</h1>
-    
-                <br>
-    
-                <h5 class="font-putih lh-lg">Start sharing the best stories, experiences and impressions in your life. 
-                    Free yourself and establish relationships with others out there. It would be great to share with them.</h5>
-    
-                <br>
-                <button type="button" class="btn btn-ungu br-md"><a class="nav-a p-0" href="{{route('login')}}">Get Started Now!</a></button>
-    
-            </div>
-    
-            <div class="col-lg-8"></div>
-        </div>
-    </div>
-    
-    
-    <div class="bg-abuabu py-5">
-        <div class="container d-grid gap-5">
-            <div class="card shadow bg-body rounded anima1">
-                <div class="row g-0">
-                  <div class="col-md-5">
-                    <img src="images/handholding-phone.jpg" class="img-fluid rounded-start anima1" alt="foto">
-                  </div>
-                  <div class="col-md-7">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <div class="bg-abuabu py-5">
+            <div class="container d-grid gap-5">
+                <div class="card shadow bg-body rounded anima1">
+                    <div class="row g-0">
+                      <div class="col-md-5">
+                        <img src="images/handholding-phone.jpg" class="img-fluid rounded-start anima1" alt="foto">
+                      </div>
+                      <div class="col-md-7">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                      </div>
                     </div>
-                  </div>
                 </div>
-            </div>
-
-            <div class="card shadow p-3 bg-body rounded anima1">
-                <div class="row g-0">
-                  <div class="col-md-7">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                  </div>
-                  <div class="col-md-5">
-                    <a href='https://www.freepik.com/vectors/people'><img src="images/people-talking.jpg" class="img-fluid rounded-start anima1" alt="foto"></a>
-                  </div>
-                </div>
-            </div>
-        </div>
-    </div>
     
-    <!-- footer -->
-    
-    <div class="top1-custom font-putih pt-5">
-        <div class="container pb-3 mb-3">
-            <div class="row align-items-start">
-                <div class="col d-flex flex-column gap-2">
-                    <h4>Menu</h4>
-                    <a href="{{route('login') }}">Login</a>
-                    <a href="{{route('register')}}">Register</a>
-                </div>
-                
-                <div class="col d-flex flex-column gap-2">
-                    <h4>More</h4>
-                    <a href="#">Privacy</a>
-                    <a href="#">Security</a>
-                    <a href="#">Contact Us</a>
-                    <a href="#">About</a>
-                </div>
-
-                <div class="col d-flex flex-column">
-                    <h4 class="pb-2">Follow Us</h4>
-                    <div class="d-flex flex-row gap-3">
-                        <a href="#"><i class="bi bi-facebook"></i></a>
-                        <a href="#"><i class="bi bi-whatsapp"></i></a>
-                        <a href="#"><i class="bi bi-instagram"></i></a>
+                <div class="card shadow p-3 bg-body rounded anima1">
+                    <div class="row g-0">
+                      <div class="col-md-7">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                      </div>
+                      <div class="col-md-5">
+                        <a href='https://www.freepik.com/vectors/people'><img src="images/people-talking.jpg" class="img-fluid rounded-start anima1" alt="foto"></a>
+                      </div>
                     </div>
                 </div>
             </div>
         </div>
-        <hr class="bg-kuning">
-        <div class="d-flex justify-content-center bg-putih1">
-            <h6 class="font-orange p-3">Copyright © {{config('app.name', 'ShareDo')}} 2021</h6>
+        
+        <!-- footer -->
+        
+        <div class="top1-custom font-putih pt-5">
+            <div class="container pb-3 mb-3">
+                <div class="row align-items-start">
+                    <div class="col d-flex flex-column gap-2">
+                        <h4>Menu</h4>
+                        <a href="{{route('login') }}">Login</a>
+                        <a href="{{route('register')}}">Register</a>
+                    </div>
+                    
+                    <div class="col d-flex flex-column gap-2">
+                        <h4>More</h4>
+                        <a href="#">Privacy</a>
+                        <a href="#">Security</a>
+                        <a href="#">Contact Us</a>
+                        <a href="#">About</a>
+                    </div>
+    
+                    <div class="col d-flex flex-column">
+                        <h4 class="pb-2">Follow Us</h4>
+                        <div class="d-flex flex-row gap-3">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-whatsapp"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="bg-kuning">
+            <div class="d-flex justify-content-center bg-putih1">
+                <h6 class="font-orange p-3">Copyright © {{config('app.name', 'ShareDo')}} 2021</h6>
+            </div>
         </div>
     </div>
-</div>
-
 @endsection

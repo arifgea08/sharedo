@@ -285,3 +285,38 @@ hr:not([size]) {
     width: 100%;
 }
  */
+
+ .navside{
+     height: 100vh;
+ }
+
+.row {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+}
+
+.nav-link {
+    color: #fff;
+}
+.bi{
+    color: #fff;
+}
+.bi-navtop{
+    color: #08193D;
+    font-size: 30px;
+    padding:0;
+}
+
+.navside.active{
+    display: none;
+    transition: all 1s ease;
+}
+
+.brand{
+    font-size:24px;
+    color: #fff;
+}
+.brand:hover{
+    text-decoration:none;
+    color: #fff;
+}
